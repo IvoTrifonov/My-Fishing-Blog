@@ -10,7 +10,7 @@
 
 html {
     box-sizing: border-box;
-    background: #F2F8FD;
+    background: #DDDDDD;
 }
 
 .site {
@@ -29,7 +29,7 @@ html {
     margin-top: 0.5rem; 
     display: flex;
     height: 15rem;
-    background: url('../images/header-image-hq.jpg') no-repeat center;
+    background: url('../images/header-gif2.gif') no-repeat center;
     background-size: cover;
     border-radius: 1.8rem;
     border-bottom-left-radius: 1.2rem;
@@ -58,9 +58,13 @@ html {
 
 .header-info blockquote {
     font-size: 1.05em;
-    margin-top: 7rem; 
+    margin-top: 5.5rem; 
     margin-left: 2rem;
     max-width: 50%;
+}
+
+.header-info blockquote p {
+   font-style: italic;
 }
 
 .header-info blockquote cite {
@@ -78,7 +82,7 @@ html {
     margin-bottom: 1rem;
     padding: 0.5rem;
     height: 2.5rem;
-    background: url('../images/footer-image.jpg') no-repeat center;
+    background: url('../images/header-gif2.gif') no-repeat center;
     background-size: cover;
     border-radius: 1.2rem;
     border-bottom-left-radius: 1.5em;

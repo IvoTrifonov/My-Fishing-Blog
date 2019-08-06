@@ -82,3 +82,8 @@
 .site-news .news-info a:hover {
     text-decoration: underline;
 }
+
+.site-news .news-info :nth-child(2) {
+    color: rgb(56, 56, 56);
+    font-style: italic;
+}
