@@ -1,3 +1,78 @@
-body {
-    background: red;
+@import url("./site-typography.css");
+@import url("./navigation.css");
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
 }
+
+html {
+    box-sizing: border-box;
+    background: #F4F4F4;
+}
+
+.site {
+    margin: 0 auto;
+    max-width: 60rem;
+}
+
+.site-header {
+    margin-top: 0.5rem; 
+    display: flex;
+    height: 15rem;
+    background: url('../images/header-image-hq.jpg') no-repeat center;
+    background-size: cover;
+    border-radius: 1.8rem;
+    border-bottom-left-radius: 1.2rem;
+    border-bottom-right-radius: 1.2rem;
+    opacity: 0.85;
+    transition: opacity 0.5s ease-out;
+    color: #FFFFFF;
+}
+
+.site-header:hover {
+    opacity: 1;
+}
+
+.site-logo {
+    margin: 0.8rem 0 0 0.8rem;
+    font-size: 1.6rem;
+    color: #FFFFFF;
+    border-radius: 0.35rem;
+    max-width: 68%;
+    text-align: center;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.site-logo:hover {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2), inset 0 0 6px rgba(255, 255, 255, 0.6);
+}
+
+.site-logo a {
+    display: block;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.1rem;
+}
+
+.header-info blockquote {
+    font-size: 1.05em;
+    margin-top: 7rem; 
+    margin-left: 2rem;
+    max-width: 50%;
+}
+
+.header-info blockquote cite {
+    display: block;
+    text-align: right;
+}
+
+
+
+
+
+
+
+
