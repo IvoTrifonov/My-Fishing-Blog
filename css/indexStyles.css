@@ -1,26 +1,26 @@
-.site-main ul {
+.fishing-container ul {
     display: flex;
     justify-content: space-around;
 }
 
-.site-main ul li {
+.fishing-container ul li {
     border-radius: 0.35rem;
     display: block;
     max-width: 30%;
     transition: box-shadow 0.3s ease-in;
 }
 
-.site-main ul li:hover {
+.fishing-container ul li:hover {
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
-.site-main .fishing-box h4,
-.site-main .fishing-box p {
+.fishing-container .fishing-box h4,
+.fishing-container .fishing-box p {
     padding: 1rem; 
     text-align: center;
 }
 
-.site-main .fishing-box a {
+.fishing-container .fishing-box a {
     display: block;
     text-align: center;
     padding-bottom: 1rem; 
@@ -28,6 +28,57 @@
     text-decoration: none;
 }
 
-.site-main .fishing-box a:hover {
+.fishing-container .fishing-box a:hover {
+    text-decoration: underline;
+}
+
+.site-news ul {
+    margin-top: 3rem; 
+    display: flex;
+    flex-direction: column;
+}
+
+.site-news ul h2 {
+    text-align: center;
+    margin-bottom: 1.5rem; 
+}
+
+.site-news li {
+    display: flex;
+    border-top: 1px solid #999999;
+    padding: 1rem;
+}
+
+.site-news .img-box {
+    height: auto;
+    transition: transform .6s ease;
+}
+
+.site-news img {
+    border-radius: 3%;
+    width: 20rem;
+}
+
+.site-news div:hover { transform: scale(1.4); }
+
+.site-news .news-info {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem; 
+    margin-top: 0; 
+}
+
+.site-news .news-info * {
+    padding: 0.2rem;
+}
+
+.site-news .news-info a {
+    margin-top: 1.7rem; 
+    display: block;
+    text-decoration: none;
+    color: #000000;
+}
+
+.site-news .news-info a:hover {
     text-decoration: underline;
 }

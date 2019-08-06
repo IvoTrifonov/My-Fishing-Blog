@@ -34,12 +34,6 @@ html {
     border-radius: 1.8rem;
     border-bottom-left-radius: 1.2rem;
     border-bottom-right-radius: 1.2rem;
-    opacity: 0.85;
-    transition: opacity 0.5s ease-out;
-}
-
-.site-header:hover {
-    opacity: 1;
 }
 
 .site-logo {
@@ -93,7 +87,6 @@ html {
 }
 
 .site-footer a { text-decoration: none; }
-
 
 
 

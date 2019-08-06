@@ -1,10 +1,9 @@
 ---
 layout: main
 title: index
-home: true
 ---
 
-<section>
+<section class="fishing-container">
     <ul>
         <li>
             <div class="fishing-box">
@@ -32,5 +31,22 @@ home: true
                 <a href="#" class="textlink">Learn more</a>
             </div>
         </li>
+    </ul>
+</section>
+
+<section class="site-news">
+    <ul>
+        <h2>WORLD FISHING NEWS</h2>
+        {% for post in site.posts %}
+        <li>
+            <div class="img-box"><img src="{{post.imgURL}}" alt=""></div> 
+            <section class="news-info">
+                <h4>{{post.title}}</h4>
+                <p>{{ post.date | date_to_string }}</p>
+                <p>{{post}}</p>
+                <a href="{{post.readMoreURL}}">READ MORE</a>
+            </section>
+        </li>
+        {% endfor %}
     </ul>
 </section>
