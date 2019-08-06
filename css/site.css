@@ -13,6 +13,7 @@ html {
 }
 
 .site {
+    border: 1px solid red;
     margin: 0 auto;
     max-width: 60rem;
 }
@@ -69,7 +70,10 @@ html {
     text-align: right;
 }
 
-
+.site-main {
+    min-height: 64vh;
+    padding: 2rem;
+}
 
 
 
