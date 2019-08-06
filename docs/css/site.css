@@ -1,5 +1,6 @@
 @import url("./site-typography.css");
 @import url("./navigation.css");
+@import url("./indexStyles.css");
 
 *, *::before, *::after {
     box-sizing: inherit;
@@ -9,11 +10,10 @@
 
 html {
     box-sizing: border-box;
-    background: #F4F4F4;
+    background: #F2F8FD;
 }
 
 .site {
-    border: 1px solid red;
     margin: 0 auto;
     max-width: 60rem;
 }

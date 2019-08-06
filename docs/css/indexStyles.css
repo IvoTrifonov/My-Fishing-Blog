@@ -1,0 +1,33 @@
+.site-main ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.site-main ul li {
+    border-radius: 0.35rem;
+    display: block;
+    max-width: 30%;
+    transition: box-shadow 0.3s ease-in;
+}
+
+.site-main ul li:hover {
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.site-main .fishing-box h4,
+.site-main .fishing-box p {
+    padding: 1rem; 
+    text-align: center;
+}
+
+.site-main .fishing-box a {
+    display: block;
+    text-align: center;
+    padding-bottom: 1rem; 
+    color: #000000;
+    text-decoration: none;
+}
+
+.site-main .fishing-box a:hover {
+    text-decoration: underline;
+}

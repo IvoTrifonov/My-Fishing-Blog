@@ -22,7 +22,6 @@
     text-decoration: none;
     display: block;
     position: relative;
-    box-shadow: none;
     transition: box-shadow 0.3s ease-in-out;
 }
   
@@ -33,7 +32,7 @@
     height: 2px;
     left: 50%;
     position: absolute;
-    background: #fff;
+    background: black;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
 }
@@ -46,3 +45,4 @@
     width: 100%; 
     left: 0; 
 }
+
