@@ -1,9 +1,16 @@
+.fishing-container {
+    margin-top: 1rem; 
+}
+
 .fishing-container ul {
+    border-radius: 0.8rem;
+    background: lightgray;
     display: flex;
     justify-content: space-around;
 }
 
 .fishing-container ul li {
+    margin: 1rem;
     border-radius: 0.35rem;
     display: block;
     max-width: 30%;
@@ -33,7 +40,7 @@
 }
 
 .site-news ul {
-    margin-top: 3rem; 
+    margin-top: 2.5rem; 
     display: flex;
     flex-direction: column;
 }
