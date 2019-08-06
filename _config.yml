@@ -43,3 +43,16 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - docs
+
+navigation:
+  - url: /
+    text: Home
+  - url: /blog/
+    text: Blog
+  - url: /gallery/
+    text: Gallery
+  - url: /fishAndTips/
+    text: Fish & Tips
+  - url: /stories/
+    text: Stories
+    

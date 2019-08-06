@@ -13,7 +13,7 @@
     <div class="site">
         <header class="site-header">
             <div class="header-info">
-                <p class="site-logo"><a href="">MY FISHING BLOG</a></p>
+                <p class="site-logo"><a href="{{ site.baseurl }}/">MY FISHING BLOG</a></p>
 
                 <blockquote>
                     <p>“I only make movies to finance my fishing.“</p>
@@ -21,25 +21,7 @@
                 </blockquote>
             </div>
 
-            <nav class="site-nav">
-                <ul>
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">Blog</a>
-                    </li>
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                    <li>
-                        <a href="#">Fish & Tips</a>
-                    </li>
-                    <li>
-                        <a href="#">Stories</a>
-                    </li>
-                </ul>
-            </nav>
+            {% include navigation.html location="header" %}
         </header>
 
         <main class="site-main">
@@ -48,7 +30,7 @@
 
 
         <footer class="site-footer">
-            <p>All rights reserved &copy; {{site.title}} </p>
+            <a href="{{ site.baseurl }}/"><p>All rights reserved &copy; {{site.title}} </p></a>
         </footer>
     </div>
 </body>
