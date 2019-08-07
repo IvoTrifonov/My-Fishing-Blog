@@ -38,6 +38,7 @@ title: index
     <ul>
         <h2>WORLD FISHING NEWS</h2>
         {% for post in site.posts %}
+        {% if post.category == "news" %}
         <li>
             <div class="img-box"><img src="{{post.imgURL}}" alt=""></div> 
             <section class="news-info">
@@ -47,6 +48,7 @@ title: index
                 <a href="{{post.readMoreURL}}">READ MORE</a>
             </section>
         </li>
+        {% endif %}
         {% endfor %}
     </ul>
 </section>

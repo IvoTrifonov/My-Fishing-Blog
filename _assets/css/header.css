@@ -1,29 +1,5 @@
-@import url("./site-typography.css");
-@import url("./navigation.css");
-@import url("./indexStyles.css");
-
-*, *::before, *::after {
-    box-sizing: inherit;
-    margin: 0;
-    padding: 0;
-}
-
-html {
-    box-sizing: border-box;
-    background: #DDDDDD;
-}
-
-.site {
-    margin: 0 auto;
-    max-width: 60rem;
-}
-
-.site-header,
-.site-footer,
-.site-logo a,
-.site-footer a {
-    color: #FFFFFF;
-}
+.site-header *,
+.site-footer * { color: #FFFFFF; }
 
 .site-header {
     margin-top: 0.5rem; 
@@ -39,8 +15,6 @@ html {
 .site-logo {
     margin: 0.8rem 0 0 0.8rem;
     border-radius: 0.35rem;
-    max-width: 100%;
-    text-align: center;
     transition: box-shadow 0.3s ease-in-out;
 }
 
@@ -58,7 +32,7 @@ html {
 }
 
 .header-info blockquote {
-    font-size: 1.05em;
+    font-size: 1.1em;
     margin-top: 4rem; 
     margin-left: 2rem;
     max-width: 50%;
@@ -69,31 +43,7 @@ html {
 }
 
 .header-info blockquote cite {
+    padding-top: 0.5rem; 
     display: block;
     text-align: right;
 }
-
-.site-main {
-    min-height: 64vh;
-    padding: 1rem 0;
-}
-
-.site-footer {
-    text-align: center;
-    margin-bottom: 1rem;
-    padding: 0.5rem;
-    height: 2.5rem;
-    background: url('../images/header-gif2.gif') no-repeat center;
-    background-size: cover;
-    border-radius: 1.2rem;
-    border-bottom-left-radius: 1.5em;
-    border-bottom-right-radius: 1.5rem;
-    font-size: 1.1rem;
-}
-
-.site-footer a { text-decoration: none; }
-
-
-
-
-

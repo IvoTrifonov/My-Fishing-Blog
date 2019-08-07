@@ -1,0 +1,49 @@
+.site-header *,
+.site-footer * { color: #FFFFFF; }
+
+.site-header {
+    margin-top: 0.5rem; 
+    display: flex;
+    height: 15rem;
+    background: url('../images/header-gif2.gif') no-repeat center;
+    background-size: cover;
+    border-radius: 1.8rem;
+    border-bottom-left-radius: 1.2rem;
+    border-bottom-right-radius: 1.2rem;
+}
+
+.site-logo {
+    margin: 0.8rem 0 0 0.8rem;
+    border-radius: 0.35rem;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.site-logo:hover {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2), inset 0 0 6px rgba(255, 255, 255, 0.6);
+}
+
+.site-logo a {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2.2rem;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.3rem;
+}
+
+.header-info blockquote {
+    font-size: 1.1em;
+    margin-top: 4rem; 
+    margin-left: 2rem;
+    max-width: 50%;
+}
+
+.header-info blockquote p {
+   font-style: italic;
+}
+
+.header-info blockquote cite {
+    padding-top: 0.5rem; 
+    display: block;
+    text-align: right;
+}

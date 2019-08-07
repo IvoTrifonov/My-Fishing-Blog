@@ -1,6 +1,4 @@
-.fishing-container {
-    margin-top: 1rem; 
-}
+.fishing-container { margin-top: 1rem; }
 
 .fishing-container ul {
     border-radius: 0.8rem;
@@ -12,7 +10,7 @@
 .fishing-container ul li {
     margin: 1rem;
     border-radius: 0.35rem;
-    display: block;
+    list-style-type: none;
     max-width: 30%;
     transition: box-shadow 0.3s ease-in;
 }
@@ -30,7 +28,7 @@
 .fishing-container .fishing-box a {
     display: block;
     text-align: center;
-    padding-bottom: 1rem; 
+    padding-bottom: 1.2rem; 
     color: #000000;
     text-decoration: none;
 }
