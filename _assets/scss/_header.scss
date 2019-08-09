@@ -1,0 +1,55 @@
+.site {
+    &-header * { color: #FFFFFF; }
+    &-header {
+        display: flex;
+        height: 15rem;
+        margin-top: 0.5rem;
+        background: url('../images/header-gif2.gif') no-repeat center;
+        background-size: cover;
+        border-radius: 1.8em;
+        border-bottom-left-radius: 1.2em;
+        border-bottom-right-radius: 1.2em;
+    }
+
+    &-logo {
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.3), inset 0 0 2px rgba(255, 255, 255, 0.6);
+        margin: 1em 0 0 1em;
+        border-radius: 0.35rem;
+        transition: box-shadow 0.3s ease-in-out;
+
+        @include bp( tablet-small ) {
+            max-width: 15em;
+        }
+        
+        &:hover {
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.2), inset 0 0 6px rgba(255, 255, 255, 0.6);
+        }
+
+        & a {
+            font-family: 'Permanent Marker', cursive;
+            font-size: 1.9em;
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            padding: 0.2em 0.5em;
+        }
+    }
+
+    .header-info blockquote {
+        font-size: 1em;
+        margin: 3.2em 1em;
+        max-width: 15em;
+
+        @include bp( tablet-small ) {
+           margin-top: 5em; 
+        }
+
+        & p { font-style: italic; }
+
+        & cite {
+            padding-top: 0.5rem; 
+            display: block;
+            text-align: right;
+        }
+    }
+}
