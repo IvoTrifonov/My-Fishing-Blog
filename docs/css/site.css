@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap");
-@media (min-width: 1600px) {
-  .site {
-    font-size: 19px; } }
-
 @media (max-width: 1600px) {
   .site {
     font-size: 18px; } }
@@ -43,8 +39,8 @@ html {
   background: #DDDDDD; }
 
 .site {
-  margin: 0 auto;
-  max-width: 60rem; }
+  margin: 1em auto;
+  max-width: 60em; }
 
 .site-header * {
   color: #FFFFFF; }
@@ -135,84 +131,118 @@ html {
 
 .fishing-container {
   margin-top: 1rem; }
+  .fishing-container ul {
+    border-radius: 0.8rem;
+    background: lightgray;
+    display: flex;
+    justify-content: space-around; }
+    @media (max-width: 480px) {
+      .fishing-container ul {
+        flex-direction: column; } }
+    .fishing-container ul li {
+      margin: 1.2em auto;
+      border-radius: 0.35rem;
+      list-style-type: none;
+      max-width: 30%;
+      transition: box-shadow 0.3s ease-in; }
+      @media (max-width: 768px) {
+        .fishing-container ul li {
+          max-width: 90%; } }
+      .fishing-container ul li:hover {
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.3); }
+  .fishing-container .fishing-box h4,
+  .fishing-container .fishing-box p {
+    padding: 1em;
+    text-align: center; }
+  .fishing-container .fishing-box a {
+    display: block;
+    text-align: center;
+    padding-bottom: 1.2em;
+    color: #000000; }
 
-.fishing-container ul {
-  border-radius: 0.8rem;
+.site-news {
+  margin: 2em; }
+  .site-news ul {
+    display: flex;
+    flex-direction: column; }
+    .site-news ul h2 {
+      text-align: center;
+      margin-bottom: 1.5rem; }
+    .site-news ul li {
+      display: flex;
+      border-top: 1px solid #999999;
+      padding: 1rem; }
+      @media (max-width: 768px) {
+        .site-news ul li {
+          flex-direction: column; } }
+  .site-news .img-box {
+    height: auto;
+    margin: 0 auto;
+    transition: transform .6s ease; }
+    .site-news .img-box img {
+      border-radius: 0.8em;
+      width: 20em;
+      height: auto; }
+  .site-news div:hover {
+    transform: scale(1.4); }
+  .site-news .news-info {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    margin-top: 0; }
+    @media (max-width: 768px) {
+      .site-news .news-info {
+        padding-top: 1em;
+        max-width: 95%; } }
+    .site-news .news-info * {
+      padding: 0.2em; }
+    .site-news .news-info a {
+      margin-top: 1.7em;
+      display: block;
+      text-decoration: none;
+      color: #000000; }
+      .site-news .news-info a:hover {
+        text-decoration: underline; }
+    .site-news .news-info::nth-child(2) {
+      color: #383838;
+      font-style: italic; }
+
+.fishing-info h3 {
+  margin: 1em 0;
+  text-align: center;
+  font-size: 1.4em; }
+
+.fishing-info ul {
   background: lightgray;
-  display: flex;
-  justify-content: space-around; }
-
-.fishing-container ul li {
-  margin: 1rem;
-  border-radius: 0.35rem;
-  list-style-type: none;
-  max-width: 30%;
-  transition: box-shadow 0.3s ease-in; }
-
-.fishing-container ul li:hover {
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3); }
-
-.fishing-container .fishing-box h4,
-.fishing-container .fishing-box p {
-  padding: 1rem;
-  text-align: center; }
-
-.fishing-container .fishing-box a {
-  display: block;
-  text-align: center;
-  padding-bottom: 1.2rem;
-  color: #000000;
-  text-decoration: none; }
-
-.fishing-container .fishing-box a:hover {
-  text-decoration: underline; }
-
-.site-news ul {
-  margin-top: 2.5rem;
-  display: flex;
-  flex-direction: column; }
-
-.site-news ul h2 {
-  text-align: center;
-  margin-bottom: 1.5rem; }
-
-.site-news li {
-  display: flex;
-  border-top: 1px solid #999999;
-  padding: 1rem; }
-
-.site-news .img-box {
-  height: auto;
-  transition: transform .6s ease; }
-
-.site-news img {
-  border-radius: 3%;
-  width: 20rem; }
-
-.site-news div:hover {
-  transform: scale(1.4); }
-
-.site-news .news-info {
+  border-radius: 0.8em;
   display: flex;
   flex-direction: column;
-  margin: 1rem;
-  margin-top: 0; }
+  align-content: center; }
+  .fishing-info ul li {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+    .fishing-info ul li p {
+      margin: 1em;
+      padding: 0 3.5em; }
+  .fishing-info ul h5 {
+    margin: 1em 0 2em 0;
+    font-size: 1em; }
 
-.site-news .news-info * {
-  padding: 0.2rem; }
-
-.site-news .news-info a {
-  margin-top: 1.7rem;
-  display: block;
-  text-decoration: none;
-  color: #000000; }
-
-.site-news .news-info a:hover {
-  text-decoration: underline; }
-
-.site-news .news-info :nth-child(2) {
-  color: #383838;
-  font-style: italic; }
+.fishing-info .img-container {
+  max-width: 40em;
+  padding: 0.5em 2em;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 0.8em; }
+  .fishing-info .img-container img {
+    border-radius: 0.8em;
+    width: 100%;
+    height: auto;
+    transition: transform .6s ease; }
+    .fishing-info .img-container img:hover {
+      transform: scale(1.2); }
 
 .site-footer {
   text-align: center;

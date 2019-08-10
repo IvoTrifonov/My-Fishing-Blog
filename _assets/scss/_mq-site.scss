@@ -1,8 +1,4 @@
 .site {
-    @include bp( desktop-large ) {
-        font-size: 19px;
-    }
-
     @include bp( desktop ) {
         font-size: 18px;
     }
