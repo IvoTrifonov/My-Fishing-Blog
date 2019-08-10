@@ -1,70 +1,79 @@
 .gal-header {
     text-align: center;
-    margin: 1rem 0 1.6rem 0; 
+    margin: 1em; 
 }
 
 .gallery {
-    border-radius: 0.8rem;
-    background: lightgray;
-    margin: 0.5rem;
+    border-radius: $base-border-radius;
+    background: $base-container-color;
     padding: 2.5rem 1.4rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 1em;
     grid-auto-flow: dense;
-}
 
-.gallery img {
-    width: 100%;
-    height: auto;
-    transition: transform .6s ease;
-}
+    @include bp( tablet-normal ) {
+        grid-template-columns: repeat(3, 1fr);
+    }
 
-.gallery img:hover { transform: scale(1.2); }
+    @include bp( tablet-small ) {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
-.gallery li {
-    list-style: none outside;
-    position: relative;
-    overflow: hidden;
-    grid-column: span 3;
-    border-radius: 0.3rem;
-}
+    & img {
+        width: 100%;
+        transition: transform .6s ease;
 
-.gallery li:before {
-    display: block;
-    content: '';
-    padding-top: 50%;
-}
+        &:hover {
+            transform: scale(1.2); 
+        }
+    }
 
-.gallery li.portrait {
-    grid-column: span 1;
-    grid-row: span 2;
-}
+    & li {
+        list-style: none outside;
+        position: relative;
+        overflow: hidden;
+        grid-column: span 3;
+        border-radius: 0.3rem;
 
-.gallery li.portrait a {
-    display: flex;
-}
+        &:before {
+            display: block;
+            content: '';
+            padding-top: 50%;
+        }
 
-.gallery li.small img,
-.gallery li.portrait img{
-    width: auto;
-    height: 100%;
-}
+        & a {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+        }
+        
+    }
 
-.gallery li.portrait:before {
-    padding-top: 200%;
-}
- 
-.gallery li.small {
-    grid-column: span 1;
-    grid-row: span 1;
-}
+    & li.portrait {
+        grid-column: span 1;
+        grid-row: span 2;
 
-.gallery li.small:before {
-    padding-top: 100%;
-}
+        & a {
+            display: flex;
+        }
 
-.gallery li a {
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
+        &::before {
+            padding-top: 200%;
+        }
+    }
+
+    & li.small {
+        grid-column: span 1;
+        grid-row: span 1;
+
+        &::before {
+            padding-top: 100%;
+        }
+    }
+
+    & li.small img,
+    & li.portrait img {
+        width: auto;
+        height: 100%;
+    }   
 }

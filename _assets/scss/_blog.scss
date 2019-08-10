@@ -1,0 +1,37 @@
+$default-width: 80%;
+$default-padding: 1em;
+
+.blog {
+    padding: 1em;
+    margin-top: 1em;
+    background: $base-container-color;
+    border-radius: $base-border-radius;
+
+    &-title {
+        text-align: center;
+        margin: 1em; 
+    }
+
+    & p {
+        padding: $default-padding 0;
+        max-width: $default-width;
+        margin: 0 auto;
+    }
+
+    & h6, & h5 {
+        font-size: 1em;
+        padding: $default-padding;
+        text-align: center;
+    }
+
+     & .img-box {
+        max-width: $default-width;
+        margin: 0 auto;
+
+        & img {
+            width: 100%;
+            height: auto;
+            border-radius: $base-border-radius;
+        }
+    }
+}
