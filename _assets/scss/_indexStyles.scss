@@ -7,7 +7,7 @@
         display: flex;
         justify-content: space-between;
 
-        @include bp( phone-normal ) {
+        @include responsive( phone-normal ) {
             flex-direction: column;
         }
 
@@ -19,7 +19,7 @@
             max-width: 30%;
             transition: box-shadow 0.3s ease-in;
 
-            @include bp( phone-normal ) { 
+            @include responsive( phone-normal ) { 
                 max-width: 90%; 
             }
             
@@ -58,7 +58,7 @@
             border-top: 1px solid #999999;
             padding: 1rem;
 
-            @include bp( tablet-normal ) {
+            @include responsive( tablet-normal ) {
                 flex-direction: column;
             }
         }
@@ -84,10 +84,9 @@
         margin: 1rem; 
         margin-top: 0;
         
-        @include bp( tablet-normal ) {
+        @include responsive( tablet-normal ) {
             padding-top: 1em; 
             max-width: 95%;
-            // margin: 0 auto;
         }
 
         & * { padding: 0.2em; }

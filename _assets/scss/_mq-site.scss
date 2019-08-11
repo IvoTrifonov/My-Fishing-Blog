@@ -1,29 +1,29 @@
 .site {
-    @include bp( desktop ) {
+    @include responsive( desktop ) {
         font-size: 18px;
     }
 
-    @include bp( laptop-normal ) {
+    @include responsive( laptop-normal ) {
         font-size: 16px;
     }
 
-    @include bp( laptop-small ) {
+    @include responsive( laptop-small ) {
         font-size: 15px;
     }
 
-    @include bp( tablet-normal ) {
+    @include responsive( tablet-normal ) {
         font-size: 14px;
     }
 
-    @include bp( tablet-small ) {
+    @include responsive( tablet-small ) {
         font-size: 13px;
     }
 
-    @include bp( phone-normal ) {
+    @include responsive( phone-normal ) {
         font-size: 11px;
     }
     
-    @include bp( phone-small ) {
+    @include responsive( phone-small ) {
         font-size: 10px;
     }
 }

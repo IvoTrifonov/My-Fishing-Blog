@@ -17,7 +17,7 @@
         border-radius: 0.35rem;
         transition: box-shadow 0.3s ease-in-out;
 
-        @include bp( tablet-small ) {
+        @include responsive( tablet-small ) {
             max-width: 15em;
         }
         
@@ -40,7 +40,7 @@
         margin: 3.2em 1em;
         max-width: 15em;
 
-        @include bp( tablet-small ) {
+        @include responsive( tablet-small ) {
            margin-top: 5em; 
         }
 

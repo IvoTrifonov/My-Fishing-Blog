@@ -1,0 +1,60 @@
+.fishing-tips {
+    margin: 1em;
+    background: $base-container-color;
+    border-radius: $base-border-radius;   
+    
+    & h3 {
+        font-size: 1.4em;
+        padding: 1em; 
+        text-align: center;
+    }
+
+    & ul {
+        display: flex;
+        flex-wrap: wrap;
+        
+        @include responsive( phone-normal ) {
+            flex-direction: column;
+        }
+    }
+    
+    & li {
+        padding-left: 2em; 
+        margin: 1em;
+        display: block;
+        max-width: 43%;
+
+        @include responsive( phone-normal ) {
+            max-width: 90%;
+        }
+
+        & .img-box {
+            overflow: hidden;
+            border-radius: $base-border-radius;
+
+            & img {
+                border-radius: $base-border-radius;
+                width: 100%;
+                transition: transform .6s ease;
+
+                &:hover { transform: scale(1.2); }
+            }
+        }
+    }
+    
+    & .tip-info {
+
+        & h4 { 
+            text-align: center; 
+            font-size: 1.1em;
+        } 
+
+        & h4, & .date {
+            margin: 0.5em 0;
+        }
+
+        & .date {
+            font-style: italic;
+        }
+    }
+}

@@ -1,4 +1,4 @@
-@mixin bp($point) {
+@mixin responsive($point) {
     @if $point == desktop {
         @media (max-width: 1600px) {
             @content;

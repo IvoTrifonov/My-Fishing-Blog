@@ -270,19 +270,39 @@ html {
       border-radius: 0.8em; }
 
 .site-footer {
-  text-align: center;
-  margin-bottom: 1rem;
-  padding: 0.5rem;
-  height: 2.5rem;
+  padding: 0.5em;
+  height: 4.5em;
   background: url("../images/header-gif2.gif") no-repeat center;
   background-size: cover;
-  border-radius: 1.2rem;
+  border-radius: 1.2em;
   border-bottom-left-radius: 1.5em;
-  border-bottom-right-radius: 1.5rem;
-  font-size: 1.1rem; }
-
-.site-footer a {
-  text-decoration: none; }
+  border-bottom-right-radius: 1.5em; }
+  .site-footer .social-medias ul {
+    margin: 0 auto;
+    max-width: 10em;
+    display: flex;
+    justify-content: space-around; }
+    .site-footer .social-medias ul li {
+      list-style-type: none; }
+      .site-footer .social-medias ul li i {
+        color: #FFFFFF; }
+      .site-footer .social-medias ul li:nth-child(1) i:hover {
+        color: #3b5998; }
+      .site-footer .social-medias ul li:nth-child(2) i:hover {
+        color: #00acee; }
+      .site-footer .social-medias ul li:nth-child(3) i:hover {
+        color: #3f729b; }
+      .site-footer .social-medias ul li:nth-child(4) i:hover {
+        color: #665cac; }
+      .site-footer .social-medias ul li:nth-child(5) i:hover {
+        color: #0077B5; }
+  .site-footer .rights-reserved {
+    margin: 1em;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 0.9em; }
 
 .site-main {
   min-height: 64vh;
@@ -343,3 +363,42 @@ html {
   .gallery li.portrait img {
     width: auto;
     height: 100%; }
+
+.fishing-tips {
+  margin: 1em;
+  background: lightgray;
+  border-radius: 0.8em; }
+  .fishing-tips h3 {
+    font-size: 1.4em;
+    padding: 1em;
+    text-align: center; }
+  .fishing-tips ul {
+    display: flex;
+    flex-wrap: wrap; }
+    @media (max-width: 480px) {
+      .fishing-tips ul {
+        flex-direction: column; } }
+  .fishing-tips li {
+    padding-left: 2em;
+    margin: 1em;
+    display: block;
+    max-width: 43%; }
+    @media (max-width: 480px) {
+      .fishing-tips li {
+        max-width: 90%; } }
+    .fishing-tips li .img-box {
+      overflow: hidden;
+      border-radius: 0.8em; }
+      .fishing-tips li .img-box img {
+        border-radius: 0.8em;
+        width: 100%;
+        transition: transform .6s ease; }
+        .fishing-tips li .img-box img:hover {
+          transform: scale(1.2); }
+  .fishing-tips .tip-info h4 {
+    text-align: center;
+    font-size: 1.1em; }
+  .fishing-tips .tip-info h4, .fishing-tips .tip-info .date {
+    margin: 0.5em 0; }
+  .fishing-tips .tip-info .date {
+    font-style: italic; }

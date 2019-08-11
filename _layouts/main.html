@@ -6,31 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{ site.baseurl }}/css/site.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/fontawesome/css/all.min.css">
     <title>{{site.title}}</title>
 </head>
 
 <body>
     <div class="site">
-        <header class="site-header">
-            <div class="header-info">
-                <p class="site-logo"><a href="{{ site.baseurl }}/">MY FISHING BLOG</a></p>
-
-                <blockquote>
-                    <p>“I only make movies to finance my fishing.“</p>
-                    <cite>Lee Marvin</cite>
-                </blockquote>
-            </div>
-
-            {% include navigation.html location="header" %}
-        </header>
+        {% include site-header.html %}
 
         <main class="site-main">
             {{content}}
         </main>
 
-        <footer class="site-footer">
-            <a href="{{ site.baseurl }}/"><p>All rights reserved &copy; {{site.title}} </p></a>
-        </footer>
+        {% include site-footer.html %}
     </div>
 </body>
 

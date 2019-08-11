@@ -9,10 +9,10 @@
         flex-wrap: wrap;
        
 
-        @include bp( tablet-normal ) {
+        @include responsive( tablet-normal ) {
             max-width: 18.5em;
         }
-        @include bp( phone-normal ) {
+        @include responsive( phone-normal ) {
             flex-direction: column;
         }
         

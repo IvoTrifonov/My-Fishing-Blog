@@ -4,4 +4,22 @@ title: Fish & Tips
 permalink: /fishAndTips/
 ---
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, aspernatur fugit. Est neque dolore rem dicta ipsam eum quos voluptates nam omnis tempore, maxime possimus quod fugiat iure debitis laborum, delectus blanditiis unde?</p>
+<section class="fishing-tips">
+    <h3>Tips For Buying Fishing Gear – The Basics</h3>
+
+    <ul>
+        {% for post in site.posts %}
+        {% if post.category == "tips" %}
+        <li>
+            <div class="img-box"><img src="{{post.imgURL}}" alt=""></div>
+            <section class="tip-info">
+                <h4>{{post.title}}</h4>
+                <p class="date">{{ post.date | date_to_string }}</p>
+                <p class="content">{{post}}</p>
+            </section>
+        </li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+</section>
