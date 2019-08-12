@@ -58,6 +58,6 @@ navigation:
     text: Gallery
   - url: /fishAndTips/
     text: Fish & Tips
-  - url: /stories/
-    text: Stories
+  - url: /products/
+    text: Products
     

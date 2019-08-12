@@ -1,14 +1,13 @@
 .site {
-    &-header * { color: #FFFFFF; }
+    &-header * { color: $text-color-1; }
     &-header {
+        box-shadow: $base-box-shadow;
         display: flex;
         height: 15rem;
         margin-top: 0.5rem;
         background: url('../images/header-gif2.gif') no-repeat center;
         background-size: cover;
-        border-radius: 1.8em;
-        border-bottom-left-radius: 1.2em;
-        border-bottom-right-radius: 1.2em;
+        border-radius: $header-footer-radius;
     }
 
     &-logo {
@@ -18,7 +17,7 @@
         transition: box-shadow 0.3s ease-in-out;
 
         @include responsive( tablet-small ) {
-            max-width: 15em;
+            max-width: 16em;
         }
         
         &:hover {

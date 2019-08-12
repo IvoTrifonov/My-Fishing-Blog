@@ -9,7 +9,7 @@ title: index
             <div class="fishing-box">
                 <h4>Spinning Fishing</h4>
                 <p>Spin fishing is an angling technique where a spinning lure is used to entice the fish to
-                   attack the bait.</p>
+                    attack the bait.</p>
                 <a href="#spin-fishing" class="textlink">Learn more</a>
             </div>
         </li>
@@ -34,13 +34,21 @@ title: index
     </ul>
 </section>
 
+<section class="products-banner">
+    <a href="{{ site.baseurl }}/products">
+        <div>
+            <p>CHECK OUT OUR PRODUCTS!</p>
+        </div>
+    </a>
+</section>
+
 <section class="site-news">
     <ul>
         <h2>WORLD FISHING NEWS</h2>
         {% for post in site.posts %}
         {% if post.category == "news" %}
         <li>
-            <div class="img-box"><img src="{{post.imgURL}}" alt=""></div> 
+            <div class="img-box"><img src="{{post.imgURL}}" alt=""></div>
             <section class="news-info">
                 <h4>{{post.title}}</h4>
                 <p>{{ post.date | date_to_string }}</p>
@@ -58,19 +66,32 @@ title: index
         <h3>FISHING TECHNIQUES</h3>
         <li id="spin-fishing">
             <h5>SPIN FISHING</h5>
-            <div class="img-container"><img src="https://www.spinningreelguide.net/wp-content/uploads/2018/12/bestspinningreels.jpg" alt=""></div>
-            <p>Spin fishing is an angling technique where a spinning lure is used to entice the fish to bite. Spin fishing is used in both freshwater and marine environments. Spin fishing is distinguished between fly fishing and bait cast fishing by the type of rod and reel used. There are two types of reels used when spin fishing, the open faced reel and the closed faced reel. The spin fishing rod has no trigger attached to the base of the fishing rod. This is what differentiates the spin fishing rod from the bait casting fishing rod.</p>
+            <div class="img-container"><img
+                    src="https://www.spinningreelguide.net/wp-content/uploads/2018/12/bestspinningreels.jpg" alt="">
+            </div>
+            <p>Spin fishing is an angling technique where a spinning lure is used to entice the fish to bite. Spin
+                fishing is used in both freshwater and marine environments. Spin fishing is distinguished between fly
+                fishing and bait cast fishing by the type of rod and reel used. There are two types of reels used when
+                spin fishing, the open faced reel and the closed faced reel. The spin fishing rod has no trigger
+                attached to the base of the fishing rod. This is what differentiates the spin fishing rod from the bait
+                casting fishing rod.</p>
         </li>
 
         <li id="fly-fishing">
             <h5>FLY FISHING</h5>
             <div class="img-container"><img src="https://www.filepicker.io/api/file/feDTPkMoSAO7BwXAmE4X" alt=""></div>
-            <p>Fly fishing is an angling method that uses a light-weight lure—called an artificial fly—to catch fish. The fly is cast using a fly rod, reel, and specialized weighted line. The light weight requires casting techniques significantly different from other forms of casting. The flies may resemble natural invertebrates, baitfish, or other food organisms.</p>
+            <p>Fly fishing is an angling method that uses a light-weight lure—called an artificial fly—to catch fish.
+                The fly is cast using a fly rod, reel, and specialized weighted line. The light weight requires casting
+                techniques significantly different from other forms of casting. The flies may resemble natural
+                invertebrates, baitfish, or other food organisms.</p>
         </li>
-        <li id="carp-fishing">    
+        <li id="carp-fishing">
             <h5>CARP FISHING</h5>
-            <div class="img-container"><img src="https://www.anglingdirect.co.uk/wp/wp-content/uploads/2017/03/Bite-alarms.jpg" alt=""></div>
-            <p>Carp is a common name for various species of freshwater fish of the family Cyprinidae, a very large group of fish native to Europe and Asia. They have been introduced to various locations around the world, though with mixed results.</p>
+            <div class="img-container"><img
+                    src="https://www.anglingdirect.co.uk/wp/wp-content/uploads/2017/03/Bite-alarms.jpg" alt=""></div>
+            <p>Carp is a common name for various species of freshwater fish of the family Cyprinidae, a very large group
+                of fish native to Europe and Asia. They have been introduced to various locations around the world,
+                though with mixed results.</p>
         </li>
     </ul>
 </section>

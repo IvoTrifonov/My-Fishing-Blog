@@ -46,14 +46,13 @@ html {
   color: #FFFFFF; }
 
 .site-header {
+  box-shadow: 0 0 0.8em #000000;
   display: flex;
   height: 15rem;
   margin-top: 0.5rem;
   background: url("../images/header-gif2.gif") no-repeat center;
   background-size: cover;
-  border-radius: 1.8em;
-  border-bottom-left-radius: 1.2em;
-  border-bottom-right-radius: 1.2em; }
+  border-radius: 1.2em; }
 
 .site-logo {
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.3), inset 0 0 2px rgba(255, 255, 255, 0.6);
@@ -62,7 +61,7 @@ html {
   transition: box-shadow 0.3s ease-in-out; }
   @media (max-width: 640px) {
     .site-logo {
-      max-width: 15em; } }
+      max-width: 16em; } }
   .site-logo:hover {
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.2), inset 0 0 6px rgba(255, 255, 255, 0.6); }
   .site-logo a {
@@ -88,7 +87,7 @@ html {
     text-align: right; }
 
 .site-nav {
-  margin: 1em 0 0 3em; }
+  margin: 1em 0 0 2em; }
   .site-nav ul {
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.3), inset 0 0 2px rgba(255, 255, 255, 0.6);
     border-radius: 0.35em;
@@ -128,6 +127,27 @@ html {
         .site-nav ul li a:hover::after {
           width: 100%;
           left: 0; }
+
+.products-banner {
+  margin: 2em 0.3em; }
+  .products-banner div {
+    background: url("https://mackenzienz.com/wp-content/uploads/2015/09/Fishing-PAge-BAnner.jpg") no-repeat top;
+    background-size: cover;
+    height: 13em;
+    border-radius: 1.2em;
+    opacity: 0.85;
+    transition: opacity 0.3s ease-in; }
+    .products-banner div:hover {
+      opacity: 1; }
+  .products-banner a {
+    text-decoration: none; }
+    .products-banner a p {
+      color: #FFFFFF;
+      text-align: right;
+      font-size: 1.8em;
+      padding: 1em 0;
+      max-width: 95%;
+      letter-spacing: 1.2px; }
 
 .fishing-container {
   margin-top: 1em; }
@@ -270,13 +290,13 @@ html {
       border-radius: 0.8em; }
 
 .site-footer {
+  box-shadow: 0 0 0.8em #000000;
+  margin-top: 2em;
   padding: 0.5em;
-  height: 4.5em;
+  height: auto;
   background: url("../images/header-gif2.gif") no-repeat center;
   background-size: cover;
-  border-radius: 1.2em;
-  border-bottom-left-radius: 1.5em;
-  border-bottom-right-radius: 1.5em; }
+  border-radius: 1.2em; }
   .site-footer .social-medias ul {
     margin: 0 auto;
     max-width: 10em;
@@ -297,7 +317,7 @@ html {
       .site-footer .social-medias ul li:nth-child(5) i:hover {
         color: #0077B5; }
   .site-footer .rights-reserved {
-    margin: 1em;
+    margin-top: 1em;
     display: block;
     text-align: center;
     text-decoration: none;
