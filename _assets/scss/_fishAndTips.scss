@@ -1,8 +1,4 @@
 .fishing-tips {
-    margin: 1em;
-    background: $base-container-color;
-    border-radius: $base-border-radius;   
-    
     & h3 {
         font-size: 1.4em;
         padding: 1em; 
@@ -10,6 +6,9 @@
     }
 
     & ul {
+        margin: 0.5em;
+        background: $base-container-color;
+        border-radius: $base-border-radius;   
         display: flex;
         flex-wrap: wrap;
         

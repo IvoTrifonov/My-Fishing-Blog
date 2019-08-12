@@ -16,13 +16,12 @@
     
     & a {
         text-decoration: none;
+        color: $text-color-1;
 
         & p {
-            color: $text-color-1;
             text-align: right;
             font-size: 1.8em;
-            padding: 1em 0; 
-            max-width: 95%;
+            padding: 1em 2em; 
             letter-spacing: 1.2px;
         }
     }

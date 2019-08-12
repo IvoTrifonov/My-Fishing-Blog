@@ -140,13 +140,12 @@ html {
     .products-banner div:hover {
       opacity: 1; }
   .products-banner a {
-    text-decoration: none; }
+    text-decoration: none;
+    color: #FFFFFF; }
     .products-banner a p {
-      color: #FFFFFF;
       text-align: right;
       font-size: 1.8em;
-      padding: 1em 0;
-      max-width: 95%;
+      padding: 1em 2em;
       letter-spacing: 1.2px; }
 
 .fishing-container {
@@ -289,6 +288,60 @@ html {
       height: auto;
       border-radius: 0.8em; }
 
+.products-section h2 {
+  margin: 1em;
+  text-align: center; }
+
+.products-section ul {
+  border-radius: 0.8em;
+  background: lightgray;
+  padding: 2.3rem 1.7em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2em;
+  grid-auto-flow: dense; }
+  @media (max-width: 640px) {
+    .products-section ul {
+      padding: 1.8rem 1.2em;
+      grid-gap: 1em;
+      grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 480px) {
+    .products-section ul {
+      grid-template-columns: repeat(1, 1fr); } }
+  .products-section ul li {
+    border-radius: 0.8em;
+    list-style-type: none;
+    background: #f1f1f1; }
+    .products-section ul li h4 {
+      text-align: center;
+      margin: 0.7em 0.2em; }
+    .products-section ul li img {
+      width: 100%;
+      height: auto; }
+    .products-section ul li .description {
+      padding: 0.6em 1em; }
+    .products-section ul li .price-box {
+      text-align: center; }
+      .products-section ul li .price-box .old-price {
+        text-decoration: line-through;
+        color: red; }
+      .products-section ul li .price-box .new-price {
+        color: green; }
+    .products-section ul li a {
+      padding: 0.2em;
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      margin: 0.8em 3em;
+      border: 1px solid gray;
+      border-radius: 0.8em;
+      color: gray;
+      font-weight: bold;
+      transition: background-color 0.4s, color 0.4s; }
+      .products-section ul li a:hover {
+        background-color: gray;
+        color: #FFFFFF; }
+
 .site-footer {
   box-shadow: 0 0 0.8em #000000;
   margin-top: 2em;
@@ -384,41 +437,45 @@ html {
     width: auto;
     height: 100%; }
 
-.fishing-tips {
-  margin: 1em;
+.fishing-tips h3 {
+  font-size: 1.4em;
+  padding: 1em;
+  text-align: center; }
+
+.fishing-tips ul {
+  margin: 0.5em;
   background: lightgray;
-  border-radius: 0.8em; }
-  .fishing-tips h3 {
-    font-size: 1.4em;
-    padding: 1em;
-    text-align: center; }
-  .fishing-tips ul {
-    display: flex;
-    flex-wrap: wrap; }
-    @media (max-width: 480px) {
-      .fishing-tips ul {
-        flex-direction: column; } }
-  .fishing-tips li {
-    padding-left: 2em;
-    margin: 1em;
-    display: block;
-    max-width: 43%; }
-    @media (max-width: 480px) {
-      .fishing-tips li {
-        max-width: 90%; } }
-    .fishing-tips li .img-box {
-      overflow: hidden;
-      border-radius: 0.8em; }
-      .fishing-tips li .img-box img {
-        border-radius: 0.8em;
-        width: 100%;
-        transition: transform .6s ease; }
-        .fishing-tips li .img-box img:hover {
-          transform: scale(1.2); }
-  .fishing-tips .tip-info h4 {
-    text-align: center;
-    font-size: 1.1em; }
-  .fishing-tips .tip-info h4, .fishing-tips .tip-info .date {
-    margin: 0.5em 0; }
-  .fishing-tips .tip-info .date {
-    font-style: italic; }
+  border-radius: 0.8em;
+  display: flex;
+  flex-wrap: wrap; }
+  @media (max-width: 480px) {
+    .fishing-tips ul {
+      flex-direction: column; } }
+
+.fishing-tips li {
+  padding-left: 2em;
+  margin: 1em;
+  display: block;
+  max-width: 43%; }
+  @media (max-width: 480px) {
+    .fishing-tips li {
+      max-width: 90%; } }
+  .fishing-tips li .img-box {
+    overflow: hidden;
+    border-radius: 0.8em; }
+    .fishing-tips li .img-box img {
+      border-radius: 0.8em;
+      width: 100%;
+      transition: transform .6s ease; }
+      .fishing-tips li .img-box img:hover {
+        transform: scale(1.2); }
+
+.fishing-tips .tip-info h4 {
+  text-align: center;
+  font-size: 1.1em; }
+
+.fishing-tips .tip-info h4, .fishing-tips .tip-info .date {
+  margin: 0.5em 0; }
+
+.fishing-tips .tip-info .date {
+  font-style: italic; }
