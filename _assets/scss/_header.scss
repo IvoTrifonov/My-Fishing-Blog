@@ -1,27 +1,33 @@
-.site {
-    &-header * { color: $text-color-1; }
-    &-header {
-        box-shadow: $base-box-shadow;
-        display: flex;
-        height: 15rem;
-        margin-top: 0.5rem;
-        background: url('../images/header-gif2.gif') no-repeat center;
-        background-size: cover;
-        border-radius: $header-footer-radius;
-    }
+.site-header {
+    & * { color: $text-color-1; }
 
-    &-logo {
-        box-shadow: 0 0 25px rgba(0, 0, 0, 0.3), inset 0 0 2px rgba(255, 255, 255, 0.6);
+    box-shadow: $base-box-shadow;
+    display: flex;
+    max-height: 15rem;
+    background: url('../images/header-gif2.gif') no-repeat center;
+    background-size: cover;
+    border-radius: $header-footer-radius;
+
+    & .site-logo {
+        box-shadow: $header-elements-box-shadow;
         margin: 1em 0 0 1em;
-        border-radius: 0.35rem;
+        border-radius: $header-elements-border-radius;
         transition: box-shadow 0.3s ease-in-out;
+        opacity: 0;
+        transform: translateX(-1em);
+        transition: opacity 0.3s ease-in, transform 0.3s ease-in-out, box-shadow 0.3s;
+
+        body.loaded & {
+            opacity: 1;
+            transform: translateX(0);
+        }
 
         @include responsive( tablet-small ) {
             max-width: 16em;
         }
         
         &:hover {
-            box-shadow: 0 0 25px rgba(0, 0, 0, 0.2), inset 0 0 6px rgba(255, 255, 255, 0.6);
+            box-shadow: $logo-box-shadow-hover;
         }
 
         & a {
@@ -38,6 +44,14 @@
         font-size: 1em;
         margin: 3.2em 1em;
         max-width: 15em;
+        opacity: 0;
+        transform: translateX(-1em);
+        transition: opacity 0.3s ease-in, transform 0.3s ease-in-out, box-shadow 0.3s;
+
+        body.loaded & {
+            opacity: 1;
+            transform: translateX(0);
+        }
 
         @include responsive( tablet-small ) {
            margin-top: 5em; 
@@ -46,7 +60,6 @@
         & p { font-style: italic; }
 
         & cite {
-            padding-top: 0.5rem; 
             display: block;
             text-align: right;
         }

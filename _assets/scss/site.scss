@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
 @import "variables";
 @import "mixins";
 @import "mq-site";
-@import "site-typography";
 @import "header";
 @import "navigation";
 @import "indexStyles";
@@ -11,3 +12,20 @@
 @import "site-main";
 @import "gallery";
 @import "fishAndTips";
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+    background: $site-background-color;
+}
+
+.site {
+    margin: 0.3em auto;
+    max-width: $site-max-width;
+}

@@ -1,29 +1,29 @@
 .site {
     @include responsive( desktop ) {
-        font-size: 18px;
+        font-size: $font-size-desktop;
     }
 
     @include responsive( laptop-normal ) {
-        font-size: 16px;
+        font-size: $font-size-laptop-normal;
     }
 
     @include responsive( laptop-small ) {
-        font-size: 15px;
+        font-size: $font-size-laptop-small;
     }
 
     @include responsive( tablet-normal ) {
-        font-size: 14px;
+        font-size: $font-size-tablet-normal;
     }
 
     @include responsive( tablet-small ) {
-        font-size: 13px;
+        font-size: $font-size-tablet-small;
     }
 
     @include responsive( phone-normal ) {
-        font-size: 11px;
+        font-size: $font-size-phone-normal;
     }
     
     @include responsive( phone-small ) {
-        font-size: 10px;
+        font-size: $font-size-phone-small;
     }
 }
