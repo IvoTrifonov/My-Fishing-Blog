@@ -33,8 +33,6 @@
         list-style: none outside;
         position: relative;
         overflow: hidden;
-        grid-column: span 3;
-        grid-row: span 1;
         border-radius: 0.3rem;
 
         &:before {
@@ -47,16 +45,16 @@
             position: absolute;
             top: 0; left: 0; right: 0; bottom: 0;
         }
-        
+    }
+
+    & li.landscape {
+        grid-column: span 2;
+        grid-row: span 1;
     }
 
     & li.portrait {
         grid-column: span 1;
         grid-row: span 2;
-
-        & a {
-            display: flex;
-        }
 
         &::before {
             padding-top: 200%;

@@ -414,8 +414,6 @@
     list-style: none outside;
     position: relative;
     overflow: hidden;
-    grid-column: span 3;
-    grid-row: span 1;
     border-radius: 0.3rem; }
     .gallery li:before {
       display: block;
@@ -427,11 +425,12 @@
       left: 0;
       right: 0;
       bottom: 0; }
+  .gallery li.landscape {
+    grid-column: span 2;
+    grid-row: span 1; }
   .gallery li.portrait {
     grid-column: span 1;
     grid-row: span 2; }
-    .gallery li.portrait a {
-      display: flex; }
     .gallery li.portrait::before {
       padding-top: 200%; }
   .gallery li.small {
